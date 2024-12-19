@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!-- Nav Bar -->
+    <div class="d-flex justify-content-between align-items-center my-4">
+        <div class="h5">Dummy API</div>
+        <h5><a href=""><i class="fa-brands fa-github"></i></a></h5>
+    </div>
+    <!-- Resources -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Resources
+        </div>
+        <div class="p-2 mx-3 rounded   d-flex justify-content-between"><strong>Courses</strong> <div> 5 Courses</div></div>
+        <div class="p-2 mx-3 rounded   d-flex justify-content-between"><strong>Users</strong> <div class> 4 Users</div></div>
+    </div>
+
+    <!--  Routes  -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Routes
+        </div>
+
+        <div class="card-body">
+           <div class="d-flex row">
+                <!--Courses-->
+               <div class="col-12 col-md-6">
+                   <!--Courses-->
+                   <div class="lead py-4">Courses</div>
+                   <div class="w-100 my-4">
+                      <div class="d-flex justify-content-between align-content-center">
+                          <button
+                                  class="btn btn-white btn-outline-none border-0"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#toggleText1"
+                                  aria-expanded="false"
+                                  aria-controls="toggleText">
+                              <strong>GET</strong>
+                          </button>
+                          <div class="d-flex align-items-center bg-light border p-1 rounded">
+                              /api/courses
+                          </div>
+                      </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText1">
+                           <p>To Obtain Courses</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText2"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>POST</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/courses
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText2">
+                           <p>To Create A Course</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText3"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>PUT</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/courses/courseId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText3">
+                           <p>To Update A Course</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText4"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>Delete</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/courses/courseId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText4">
+                           <p>To Delete A Course</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText5"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>GET</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/courses/courseId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText5">
+                           <p>To Obtain A Course With Course Id</p>
+                       </div>
+                   </div>
+               </div>
+                <!--Users-->
+               <div class="col-12 col-md-6">
+                   <div class="lead py-4">User</div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText6"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>GET</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText6">
+                           <p>To Obtain Users</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText7"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>POST</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText7">
+                           <p>To Create A User</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText8"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>PUT</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users/userId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText8">
+                           <p>To Update A User</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText9"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>Delete</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users/userId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText9">
+                           <p>To Delete A User</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText10"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText10">
+                               <strong>GET</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users/userId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText10">
+                           <p>To Obtain A User With User Id Containing Related Course Information</p>
+                       </div>
+                   </div>
+                   <div class="w-100 my-4">
+                       <div class="d-flex justify-content-between align-content-center">
+                           <button
+                                   class="btn btn-white btn-outline-none border-0"
+                                   type="button"
+                                   data-bs-toggle="collapse"
+                                   data-bs-target="#toggleText11"
+                                   aria-expanded="false"
+                                   aria-controls="toggleText">
+                               <strong>PUT</strong>
+                           </button>
+                           <div class="d-flex align-items-center bg-light border p-1 rounded">
+                               /api/users/userId/courseId
+                           </div>
+                       </div>
+                       <div class="collapse w-100 text-center  mt-3" id="toggleText11">
+                           <p>To Enroll A Course With UserId , adding a course to user</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <div class="text-center">Copyright © 2024 <a href="https://github.com/EgonLh">Egon</a></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

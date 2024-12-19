@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font-family: Monospace;
+  background-color: #f8f9fa;
+
+}
+.card-header {
+  background-color: #343a40;
+  color: white;
+}
+
+.card-body p:last-child {
+  border-bottom: none;
+}
+a {
+  color: #00B7FF;
+}
+#background {
+  background: rgb(200,177,187);
+  background: radial-gradient(circle, rgba(200,177,187,1) 0%, rgba(165,201,241,1) 100%);
+}
+#container{
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
+}
