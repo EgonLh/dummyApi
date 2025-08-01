@@ -2,6 +2,8 @@
 
 > API for Learning Management System (LMS)
 
+> Remark : services from `mongo` is stopped
+
 ##### Key Features:
 
 | **Feature**         | **Description**                                                                                   | **Additional Notes**                                                                 |
